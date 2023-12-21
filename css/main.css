@@ -4,9 +4,94 @@
     --main: rgb(77, 99, 111);
     --lightmain: #7d97a5;
     --gray: rgb(223, 229, 232);
+    --test:50px
+
 }
 
 * {
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6,.logo{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* start nav */
+.logo{
+    font-size: 18px;
+}
+.nav-link{
+    font-size: 14px;
+}
+/* .collapse{
+    background-color: white;
+}
+.collapse:not(.show){
+    background-color: transparent;
+} */
+/* end nav */
+
+
+/* start home */
+#overlay{
+    background-color: rgba(0,0,0,0.65);
+}
+
+#overlay h5{
+    font-size: 50px;
+    font-weight: 800;
+}
+/* @media screen and (max-width:590px){
+    #overlay h5{
+        font-size: 30px;
+        
+    }
+} */
+.text-changing h1 span{
+    font-size: 60px;
+}
+.text-changing h1 span:nth-child(1){
+   font-weight:lighter;
+}
+.text-changing h1 span:nth-child(2){
+    font-weight: 400;
+}
+
+.socialIcons .icons{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+.active{
+    position: relative;
+    
+}
+.nav-link{
+    padding: 0 !important;
+    display: inline;
+}
+.active::after{
+content:'';
+font-weight: bold;
+position: absolute;
+bottom:0;
+left:0;
+height: 2px;
+width: 100%;
+background-color: white;
+transition: width 0.5s ease;
+}
+
+/* end home */
