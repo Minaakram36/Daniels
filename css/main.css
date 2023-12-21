@@ -1,0 +1,12 @@
+/* start global */
+:root {
+    --darkmain: rgb(58, 75, 83);
+    --main: rgb(77, 99, 111);
+    --lightmain: #7d97a5;
+    --gray: rgb(223, 229, 232);
+}
+
+* {
+    box-sizing: border-box;
+}
+
