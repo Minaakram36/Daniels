@@ -4,18 +4,24 @@
     --main: rgb(77, 99, 111);
     --lightmain: #7d97a5;
     --gray: rgb(223, 229, 232);
-    --test:50px
-
+    --test: 50px
 }
 
 * {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,.logo{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
     font-family: "Montserrat", sans-serif;
 }
-a{
+
+a {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     color: inherit;
@@ -23,31 +29,34 @@ a{
 
 
 /* start nav */
-.logo{
+.logo {
     font-size: 18px;
 }
-.nav-link{
+
+.nav-link {
     font-size: 14px;
 }
 
-.active{
+.active {
     position: relative;
-    
+
 }
-.nav-link{
+
+.nav-link {
     padding: 0 !important;
     display: inline;
 }
-.active::after{
-content:'';
-font-weight: bold;
-position: absolute;
-bottom:0;
-left:0;
-height: 2px;
-width: 100%;
-background-color: white;
-transition: width 0.5s ease;
+
+.active::after {
+    content: '';
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: width 0.5s ease;
 }
 
 /* .collapse{
@@ -60,31 +69,45 @@ transition: width 0.5s ease;
 
 
 /* start home */
-#overlay{
-    background-color: rgba(0,0,0,0.65);
+#overlay {
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
-#overlay h5{
+#overlay h5 {
     font-size: 50px;
     font-weight: 800;
 }
+
 /* @media screen and (max-width:590px){
     #overlay h5{
         font-size: 30px;
         
     }
 } */
-.text-changing h1 span{
+.text-changing h1::after {
+    content: "|";
+    position: relative;
     font-size: 60px;
+    font-weight: lighter;
+    top: -10px;
 }
-.text-changing h1 span:nth-child(1){
-   font-weight:lighter;
+
+.text-changing h1 span {
+    font-size: 60px;
+    display: inline-block;
+    overflow: hidden;
+    text-wrap: nowrap;
 }
-.text-changing h1 span:nth-child(2){
+
+.text-changing h1 span:nth-child(1) {
+    font-weight: lighter;
+}
+
+.text-changing h1 span:nth-child(2) {
     font-weight: 400;
 }
 
-.socialIcons .icons{
+.socialIcons .icons {
     display: block;
     text-align: center;
     font-size: 14px;
@@ -93,8 +116,124 @@ transition: width 0.5s ease;
     line-height: 35px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
-    
+
 }
 
+.text1 {
+
+    animation: text-animation1 6s alternate infinite;
+    
+    transition: width 0.3s ease;
+}
+
+.text2 {
+    animation: text-animation2 6s alternate infinite;
+    transition: width 0.3s ease;
+}
+.text3 {
+    animation: text-animation3 6s alternate infinite;
+    transition: width 0.3s ease;
+}
+@keyframes text-animation1 {
+    0% {
+        width: 390px;
+    }
+
+    14.28% {
+        width: 390px;
+    }
+
+    28.56% {
+        width: 0px;
+    }
+
+    42.84% {
+        width: 0px;
+    }
+
+    57.12% {
+        width: 0px;
+    }
+
+    71.4% {
+        width: 0px;
+    }
+
+    85.68% {
+        width: 0px;
+    }
+
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes text-animation2 {
+    0% {
+        width: 0px;
+    }
+
+    14.28% {
+        width: 0px;
+    }
+
+    28.56% {
+        width: 0px;
+    }
+
+    42.84% {
+        width: 275px;
+    }
+
+    57.12% {
+        width: 275px;
+    }
+
+    71.4% {
+        width: 0px;
+    }
+
+    85.68% {
+        width: 0px;
+    }
+
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes text-animation3 {
+    0% {
+        width: 0px;
+    }
+
+    14.28% {
+        width: 0px;
+    }
+
+    28.56% {
+        width: 0px;
+    }
+
+    42.84% {
+        width: 0px;
+    }
+
+    57.12% {
+        width: 0px;
+    }
+
+    71.4% {
+        width: 0px;
+    }
+
+    85.68% {
+        width: 307px
+    }
+
+    100% {
+        width: 307px
+    }
+}
 
 /* end home */
