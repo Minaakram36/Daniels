@@ -11,6 +11,31 @@
     box-sizing: border-box;
 }
 
+/* .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+
+
 h1,
 h2,
 h3,
@@ -21,7 +46,8 @@ h6,
     font-family: "Montserrat", sans-serif;
 }
 
-a {
+a,
+p {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     color: inherit;
@@ -29,6 +55,9 @@ a {
 
 
 /* start nav */
+nav{
+    z-index: 9999;
+}
 .logo {
     font-size: 18px;
 }
@@ -120,20 +149,20 @@ a {
 }
 
 .text1 {
-
-    animation: text-animation1 6s alternate infinite;
-    
+    animation: text-animation1 10s alternate infinite;
     transition: width 0.3s ease;
 }
 
 .text2 {
-    animation: text-animation2 6s alternate infinite;
+    animation: text-animation2 10s alternate infinite;
     transition: width 0.3s ease;
 }
+
 .text3 {
-    animation: text-animation3 6s alternate infinite;
-    transition: width 0.3s ease;
+    animation: text-animation3 10s alternate infinite;
+    transition: width 3s ease;
 }
+
 @keyframes text-animation1 {
     0% {
         width: 390px;
@@ -237,3 +266,51 @@ a {
 }
 
 /* end home */
+
+/* start about */
+.about {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.about img {
+    vertical-align: middle;
+}
+
+.about h3 {
+    font-size: 30px;
+}
+
+.about .subTitle {
+    color: #999999;
+    font-size: 14px;
+}
+
+.about p {
+    color: #748182;
+    font-size: 14px;
+}
+
+.about .b1 {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.about .b2 {
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+
+.about .b1:hover {
+    background-color: white;
+    color: black
+}
+
+.about .b2:hover {
+    background-color: black;
+    color: white
+}
+
+/* end about */
