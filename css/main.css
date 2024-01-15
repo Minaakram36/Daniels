@@ -403,3 +403,44 @@ nav {
 }
 
 /* end services */
+
+
+
+
+
+/*start clients */
+.clients {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.clients .courselContent{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+.clients .active::after{
+    background-color: rgb(66, 65, 65);
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+}
+.clients .carousel-inner img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+       
+}
+.carousel-indicators [type='button']{
+    background-color: gray;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 0px;
+}
+
+/*end clients */
