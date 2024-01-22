@@ -1,9 +1,6 @@
 /* start global */
 :root {
-    --darkmain: rgb(58, 75, 83);
-    --main: rgb(77, 99, 111);
-    --lightmain: #7d97a5;
-    --gray: rgb(223, 229, 232);
+    --activeColor:white;
 }
 
 * {
@@ -87,6 +84,7 @@ h6 {
 /* start nav */
 nav {
     z-index: 9999;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -114,9 +112,20 @@ nav {
     bottom: 0;
     left: 0;
     height: 2px;
-    width: 100%;
-    background-color: white;
+    width: 0%;
+    animation: activeAnimation 0.5s forwards ease;
+    background-color: var(--activeColor);
     transition: width 0.5s ease;
+}
+
+@keyframes activeAnimation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 /* .collapse{
@@ -157,6 +166,32 @@ nav {
     display: inline-block;
     overflow: hidden;
     text-wrap: nowrap;
+}
+@media screen and (max-width:988px) {
+    #overlay h5 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .text-changing h1 span {
+        font-size: 50px;
+    }
+    .text-changing h1::after {
+       
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:500px) {
+    #overlay h5 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .text-changing h1 span {
+        font-size: 30px;
+    }
+    .text-changing h1::after {
+       
+        font-size: 30px;
+    }
 }
 
 .text-changing h1 span:nth-child(1) {
@@ -420,7 +455,82 @@ nav {
 /* end services */
 
 
+/* start work */
+.works {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
 
+.works .menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    gap: 40px;
+}
+
+.works .active::after {
+    background-color: black;
+}
+
+
+.works .All{
+    overflow: hidden;
+    padding: 10px;
+}
+.works .overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+
+}
+.works .overlay a {
+    display: block;
+    text-align: center;
+    font-size: 12px !important;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    color: white;
+    transform: translateY(40px);
+    background-color: black;
+    transition: all 0.5s ease;
+}
+
+.works .All:hover .overlay {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.works .All:hover a{
+    transform: translateY(0px);
+}
+
+
+
+.works .overlay a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+/* end work */
 
 
 /*start clients */
@@ -607,7 +717,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: calc( 100% / 3 );
+    min-width: calc(100% / 3);
     gap: 20px;
 }
 
@@ -621,6 +731,7 @@ nav {
     border-radius: 50%;
     color: black;
     background-color: #f7f7f7;
+    transition: color, background-color 0.6s ease;
 }
 
 .contact .info .box:hover a {

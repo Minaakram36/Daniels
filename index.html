@@ -19,7 +19,7 @@
 <body>
 
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark  position-fixed top-0 w-100 ">
+    <nav class="navbar navbar-expand-md navbar-dark  position-fixed top-0 w-100 " id="nav">
         <div class="container">
             <a class="navbar-brand logo fw-bold" href="#home">DANIELS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,413 +55,535 @@
         </div>
     </nav>
     <!-- end navbar -->
+    <div data-bs-spy="scroll" data-bs-target="#nav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example" tabindex="0">
+        <!-- start home -->
+        <section id="home" class="home ">
+            <img src="images/bg.jpg" alt="background image" class="w-100 ob vh-100 position-relative object-fit-cover">
+            <div id="overlay" class="position-absolute z-1 w-100 h-100 top-0 ">
+                <div
+                    class="container text-white d-flex flex-column gap-3 justify-content-center align-items-center h-100">
+                    <h5>Hello</h5>
+                    <div class="text-changing">
+                        <h1>
+                            <span>I Am</span>
+                            <span class="text1">Larry Daniels</span>
+                            <span class="text2">Designer</span>
+                            <span class="text3">Developer</span>
 
-    <!-- start home -->
-    <section id="home" class="home ">
-        <img src="images/bg.jpg" alt="background image" class="w-100 ob vh-100 position-relative object-fit-cover">
-        <div id="overlay" class="position-absolute z-1 w-100 h-100 top-0 ">
-            <div class="container text-white d-flex flex-column gap-3 justify-content-center align-items-center h-100">
-                <h5>Hello</h5>
-                <div class="text-changing">
-                    <h1>
-                        <span>I Am</span>
-                        <span class="text1">Larry Daniels</span>
-                        <span class="text2">Designer</span>
-                        <span class="text3">Developer</span>
-
-                    </h1>
-                </div>
-                <div class="socialIcons d-flex flex-row justify-content-center  gap-1">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-brands fa-twitter"></i>
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-brands fa-behance"></i>
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- end home -->
-
-    <!-- start about -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-5 mb-5">
-                    <div class="image">
-                        <img src="images/hero.jpg" alt="hero" class="w-100">
-                        <div class="backgroundDots"></div>
+                        </h1>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-7 ">
-                    <h3 class="fw-bold mb-0">About Me.</h3>
-                    <div class="subTitle mb-4">UI / UX DESIGNER & WEB DEVELOPER</div>
-                    <p>I am <b>Jerry Daniels</b>Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five
-                        centuries, but also the leap into electronic but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing
-                    </p>
-                    <div class="status d-flex flex-column row-gap-4 mt-5">
-                        <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="95"
-                            aria-valuemin="0" aria-valuemax="100" style="height: 24px">
-                            <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
-                                style="width: 95%">
-                                <span>Web Design</span>
-                                <span>95%</span>
-                            </div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100" style="height: 24px">
-                            <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
-                                style="width: 80%">
-                                <span>Branding</span>
-                                <span>80%</span>
-                            </div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100" style="height: 24px">
-                            <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
-                                style="width: 90%">
-                                <span>Development</span>
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <button type="button" class="btn btn b1">Download C.V</button>
-                        <button type="button" class="btn btn b2">Contact Me</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end about -->
-
-    <!-- start services -->
-    <section id="services" class="services bg2">
-        <div class="container">
-            <h3 class="title mb-5">Services.</h3>
-
-            <div class="boxesContainer">
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-solid fa-laptop"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-solid fa-bullhorn"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-solid fa-umbrella"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-regular fa-gem"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-solid fa-display"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <span class="icons">
-                            <i class="fa-solid fa-camera"></i>
-                        </span>
-                    </a>
-                    <h6>Web Design</h6>
-                    <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text
-                        ever</p>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-    <!-- end services -->
-
-    <!-- start works -->
-    <!-- end works -->
-
-    <!-- start clients -->
-    <section id="clients" class="clients bg2">
-        <div class="container">
-            <h3 class="title mb-5">Testimonials.</h3>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="courselContent">
-                            <img src="images/1_New1.jpg" alt="img1">
-                            <div>
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book.
-                                </p>
-                                <h6>Alex Smith</h6>
-                                <span>Envato Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="courselContent">
-                            <img src="images/1_New1.jpg" alt="img2">
-                            <div>
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book.
-                                </p>
-                                <h6>Alex Smith</h6>
-                                <span>Envato Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="courselContent">
-                            <img src="images/1_New1.jpg" alt="img3">
-                            <div>
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book.
-                                </p>
-                                <h6>Alex Smith</h6>
-                                <span>Envato Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-indicators position-relative">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="stats">
-        <div class="container">
-            <div class="statistics">
-                <div class="box">
-                    <i class="fa-solid fa-users"></i>
-                    <h3>850</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                    <h3>230</h3>
-                    <p>Complete Projects</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <h3>9450</h3>
-                    <p>Lines Of Code</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-cloud-arrow-down"></i>
-                    <h3>780</h3>
-                    <p>Files Downloaded</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end clients -->
-
-    <!-- start team -->
-    <section id="team" class="team bg2">
-        <div class="container">
-            <h1 class="title mb-5">Our Team.</h1>
-            <div class="boxesContainer">
-                <div class="box">
-                    <div>
-                        <img src="images/1.jpg" alt="image1">
-                        <div class="overlay">
-                            <a href="#">
+                    <div class="socialIcons d-flex flex-row justify-content-center  gap-1">
+                        <a href="#">
+                            <span class="icons">
                                 <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icons">
                                 <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-pinterest"></i>
-                            </a>
-                            <a href="#">
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icons">
                                 <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>John Doe</h4>
-                        <h5>FRONT-END DEVELOPER</h5>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-brands fa-behance"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="box">
-                    <div>
-                        <img src="images/2.jpg" alt="image1">
-                        <div class="overlay">
-                            <a href="">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-pinterest"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Dave Wood</h4>
-                        <h5>BACK-END DEVELOPER</h5>
-                    </div>
-                </div>
+            </div>
+        </section>
+        <!-- end home -->
 
-                <div class="box">
-                    <div>
-                        <img src="images/1.jpg" alt="image1">
-                        <div class="overlay">
-                            <a href="">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-pinterest"></i>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+        <!-- start about -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 mb-5">
+                        <div class="image">
+                            <img src="images/hero.jpg" alt="hero" class="w-100">
+                            <div class="backgroundDots"></div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Claire Chedd</h4>
-                        <h5>BACK-END DEVELOPER</h5>
+                    <div class="col-sm-12 col-md-7 ">
+                        <h3 class="fw-bold mb-0">About Me.</h3>
+                        <div class="subTitle mb-4">UI / UX DESIGNER & WEB DEVELOPER</div>
+                        <p>I am <b>Jerry Daniels</b>Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five
+                            centuries, but also the leap into electronic but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset
+                            sheets containing
+                        </p>
+                        <div class="status d-flex flex-column row-gap-4 mt-5">
+                            <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                                <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
+                                    style="width: 95%">
+                                    <span>Web Design</span>
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                                <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
+                                    style="width: 80%">
+                                    <span>Branding</span>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 24px">
+                                <div class="progress-bar d-flex flex-row justify-content-between px-2 bg-black"
+                                    style="width: 90%">
+                                    <span>Development</span>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn b1">Download C.V</button>
+                            <button type="button" class="btn btn b2">Contact Me</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- end about -->
 
+        <!-- start services -->
+        <section id="services" class="services bg2">
+            <div class="container">
+                <h3 class="title mb-5">Services.</h3>
 
-    </section>
-    <!-- end team -->
-
-    <!-- start contacts -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h1 class="title mb-5">Contact Us.</h1>
-            <div class="info d-flex  flex-column flex-md-row justify-content-md-between">
-                <div class="box">
-                    <a href="">
-                        <i class="fa-solid fa-location-arrow"></i>
-                    </a>
-                    <h6>
-                        Address
-                    </h6>
-                    <p>
-                        6834 Hollywood Blvd - Los Angeles CA
-                    </p>
-                </div>
-                <div class="box">
-                    <a href="">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <h6>
-                        Email
-                    </h6>
-                    <p>
-                        Support@website.com
-                    </p>
-                </div>
-                <div class="box">
-                    <a href="">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
-                    <h6>
-                        Phone
-                    </h6>
-                    <p>
-                        +20 010 2517 8918
-                    </p>
+                <div class="boxesContainer">
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-solid fa-laptop"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-solid fa-umbrella"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-regular fa-gem"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-solid fa-display"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <span class="icons">
+                                <i class="fa-solid fa-camera"></i>
+                            </span>
+                        </a>
+                        <h6>Web Design</h6>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text
+                            ever</p>
+                    </div>
                 </div>
             </div>
-            <div class='Inputs my-5'>
 
-                <div class="mb-3 d-md-flex gap-4 ">
-                    <input type="text" style="background-color:#f7f7f7;" class="form-control" placeholder="Username" aria-label="Username">
-                    <input type="text" style="background-color:#f7f7f7;" class="form-control" placeholder="Email" aria-label="Email">
+
+        </section>
+        <!-- end services -->
+
+        <!-- start works -->
+        <section id="works" class="works">
+            <div class="container">
+                <h1 class="title mb-5">Portfolio.</h1>
+                <div class="menu mb-5">
+                    <span class="active">All</span>
+                    <span>Brand</span>
+                    <span>Design</span>
+                    <span>Graphic</span>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" style="background-color:#f7f7f7;" placeholder="Message" aria-label="With textarea" rows="6"></textarea>
+                <div class="products">
+                    <div class="row col-gap-4">
+                        <div class="All Graphic col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/1.jpg" alt="1" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="All Design col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/2.jpg" alt="2" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="All Graphic col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/3.jpg" alt="3" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="All Brand col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/4.jpg" alt="4" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="All Design Graphic col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/5.jpg" alt="5" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="All Brand col-sm-6 col-md-4 position-relative">
+                            <img src="images/portfolio/6.jpg" alt="6" class="w-100">
+                            <div class="overlay ">
+                                <h6 style="font-size: 12px; font-weight: 700; letter-spacing: 2px;">Web Design</h6>
+                                <div class="icons d-flex justify-content-center align-items-center gap-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-link-slash"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-dark py-1 px-5">submit</button>
             </div>
-        </div>
-    </section>
-    <!-- end contacts -->
+        </section>
+        <!-- end works -->
 
+        <!-- start clients -->
+        <section id="clients" class="clients bg2">
+            <div class="container">
+                <h3 class="title mb-5">Testimonials.</h3>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="courselContent">
+                                <img src="images/1_New1.jpg" alt="img1">
+                                <div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <h6>Alex Smith</h6>
+                                    <span>Envato Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="courselContent">
+                                <img src="images/1_New1.jpg" alt="img2">
+                                <div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <h6>Alex Smith</h6>
+                                    <span>Envato Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="courselContent">
+                                <img src="images/1_New1.jpg" alt="img3">
+                                <div>
+                                    <p>
+                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        since the when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                    </p>
+                                    <h6>Alex Smith</h6>
+                                    <span>Envato Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators position-relative">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="stats">
+            <div class="container">
+                <div class="statistics">
+                    <div class="box">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>850</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <h3>230</h3>
+                        <p>Complete Projects</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3>9450</h3>
+                        <p>Lines Of Code</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <h3>780</h3>
+                        <p>Files Downloaded</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end clients -->
+
+        <!-- start team -->
+        <section id="team" class="team bg2">
+            <div class="container">
+                <h1 class="title mb-5">Our Team.</h1>
+                <div class="boxesContainer">
+                    <div class="box">
+                        <div>
+                            <img src="images/1.jpg" alt="image1">
+                            <div class="overlay">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>John Doe</h4>
+                            <h5>FRONT-END DEVELOPER</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div>
+                            <img src="images/2.jpg" alt="image1">
+                            <div class="overlay">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Dave Wood</h4>
+                            <h5>BACK-END DEVELOPER</h5>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div>
+                            <img src="images/1.jpg" alt="image1">
+                            <div class="overlay">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Claire Chedd</h4>
+                            <h5>BACK-END DEVELOPER</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end team -->
+
+        <!-- start contacts -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="title mb-5">Contact Us.</h1>
+                <div class="info d-flex  flex-column flex-md-row justify-content-md-between">
+                    <div class="box">
+                        <a href="">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </a>
+                        <h6>
+                            Address
+                        </h6>
+                        <p>
+                            6834 Hollywood Blvd - Los Angeles CA
+                        </p>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <h6>
+                            Email
+                        </h6>
+                        <p>
+                            Support@website.com
+                        </p>
+                    </div>
+                    <div class="box">
+                        <a href="">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <h6>
+                            Phone
+                        </h6>
+                        <p>
+                            +20 010 2517 8918
+                        </p>
+                    </div>
+                </div>
+                <div class='Inputs my-5'>
+
+                    <div class="mb-3 d-md-flex gap-4 ">
+                        <input type="text" style="background-color:#f7f7f7;" class="form-control" placeholder="Username"
+                            aria-label="Username">
+                        <input type="text" style="background-color:#f7f7f7;" class="form-control" placeholder="Email"
+                            aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" style="background-color:#f7f7f7;" placeholder="Message"
+                            aria-label="With textarea" rows="6"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-dark py-1 px-5">submit</button>
+                </div>
+            </div>
+        </section>
+        <!-- end contacts -->
+        <!-- start footer -->
+        <footer class="container-fluid text-center bg-dark py-4">
+            <p class="p-0 m-0">Copy Right 2018 © By Daniels All Rights Reserved</p>
+        </footer>
+        <!-- end footer -->
+    </div>
     <!-- start importing bootstrap an fontawesome -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
