@@ -7,27 +7,31 @@ let root = document.documentElement;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-let currentText=document.querySelector(".text1"); //ref to the main text element
-
-let text2=document.querySelector(".text2"); 
-let text3=document.querySelector(".text3"); // ref to text2 and text 3 to get their width from the dom their opacity is set to 0 
+let currentText=document.getElementById("current"); //ref to the main text element
+let text1=document.getElementById("text1");
+let text2=document.getElementById("text2"); 
+let text3=document.getElementById("text3"); // ref to text1 text2 and text 3 to get their width from the dom their opacity is set to 0 
 
 let texts=["Designer","Developer","Larry Daniels"] // list of text to cycle from
 
-let textWith=[text2.offsetWidth,text3.offsetWidth,currentText.offsetWidth] // array of the width of each word
+let textWith=[text2.offsetWidth,text3.offsetWidth,text1.offsetWidth] // array of the width of each word
 
-text2.remove();
-text3.remove(); //removing text2 and 3 from dom i only needed to know their width
+// text2.remove();
+// text3.remove(); //removing text2 and 3 from dom i only needed to know their width
 
 let index= 0;
 
-root.style.setProperty("--animationTextWidth",`${currentText.offsetWidth}px`) // setting the var in css  that i use for the animation
+root.style.setProperty("--animationTextWidth",`${text1.offsetWidth}px`) // setting the var in css  that i use for the animation
 
 setInterval(() => {
+    
+    textWith=[text2.offsetWidth,text3.offsetWidth,text1.offsetWidth] // updating width in case window size changed
 
     currentText.style.animationName="eraseAnimation" //  trigger the erasing text animtion of the current text
 
+
     setTimeout(() => {
+        
 
         currentText.innerHTML=texts[index]; // changing the  the text
 
