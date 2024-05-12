@@ -41,9 +41,9 @@ setInterval(() => {
 
         currentText.style.animationName="appearAnimation" // triggering the reveal text animation
         
-    }, 500);
+    }, 1000);
    
-}, 3000);
+}, 5000);
 });
 
 

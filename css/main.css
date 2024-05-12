@@ -212,8 +212,9 @@ nav {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-timing-function: steps(14);
 }
 
 @keyframes eraseAnimation {
